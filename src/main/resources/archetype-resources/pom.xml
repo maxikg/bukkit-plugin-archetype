@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  
+  <properties>
+  	<!-- HINT: You can use the latest version you find there: http://repo.bukkit.org/content/groups/public/org/bukkit/bukkit/ -->
+  	<bukkit.api.version>1.6.2-R0.2-SNAPSHOT</bukkit.api.version>
+  	
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <repositories>
+  	<repository>
+  		<id>bukkit-repo</id>
+  		<url>http://repo.bukkit.org/content/groups/public/</url>
+  	</repository>
+  </repositories>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.bukkit</groupId>
+  		<artifactId>bukkit</artifactId>
+  		<version>${bukkit.api.version}</version>
+  	</dependency>
+  </dependencies>
+  
+  <build>
+  	<defaultGoal>clean package</defaultGoal>
+  	<finalName>${artifactId}</finalName>
+  	<resources>
+  		<resource>
+  			<directory>src/main/resources</directory>
+  			<filtering>true</filtering>
+  			<includes>
+  				<include>plugin.yml</include>
+  				<include>config.yml</include>
+  			</includes>
+  		</resource>
+  	</resources>
+  </build>
+</project>
