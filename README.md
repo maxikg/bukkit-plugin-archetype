@@ -24,7 +24,7 @@ edit it like this:
   	<archetype>
   		<groupId>de.maxikg</groupId>
   		<artifactId>bukkit-plugin-archetype</artifactId>
-  		<version>1.6.2-SNAPSHOT</version> <!-- change this, if you need a newer version if there is something available -->
+  		<version>1.6.4-SNAPSHOT</version> <!-- change this, if you need a newer version if there is something available -->
   		<repository>http://repo.maxikg.de/content/groups/public/</repository>
   	</archetype>
   	...
