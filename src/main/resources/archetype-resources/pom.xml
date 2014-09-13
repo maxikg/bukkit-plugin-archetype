@@ -7,7 +7,7 @@
   
   <properties>
   	<!-- HINT: You can use the latest version you find there: http://repo.bukkit.org/content/groups/public/org/bukkit/bukkit/ -->
-  	<bukkit.api.version>1.6.4-R0.1-SNAPSHOT</bukkit.api.version>
+  	<bukkit.api.version>1.7.9-R0.2-SNAPSHOT</bukkit.api.version>
   	
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
